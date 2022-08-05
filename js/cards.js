@@ -34,8 +34,13 @@ export function updateCardModal(d) {
   d3.select('#visualization-dimensions')
     .html(() => {
       let tags = ''
-      tags += `<span class="badge badge-pill badge-secondary">vis: ${d.vis}</span>\n`
-      tags += `<span class="badge badge-pill badge-secondary">data binding: ${d.data_binding}</span>\n`
+      tags += `<div class="badge badge-pill badge-secondary" float="left">vis: ${d.vis}</div>\n`
+      tags += '<br />\n'
+      tags += `<div class="badge badge-pill badge-secondary" float="left">data binding: ${d.data_binding}</div>\n`
+      tags += '<br />\n'
+      tags += `<div class="badge badge-pill badge-secondary" float="left">URL: 
+      <a href=${d.link} class="link">${d.link}</a></div>\n`
+      tags += '<br />\n'
       // tags += `<span class="badge badge-pill badge-secondary">specificity: ${d.specificity.toLowerCase()}</span>\n`
       // tags += `<span class="badge badge-pill badge-secondary">coverage: ${d.coverage.toLowerCase()}</span>\n`
       // tags += `<span class="badge badge-pill badge-secondary">authenticity: ${d.authenticity.toLowerCase()}</span>\n`
