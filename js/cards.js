@@ -38,7 +38,7 @@ export function updateCardModal(d) {
       tags += '<br />\n'
       tags += `<div class="badge badge-pill badge-secondary" float="left">data binding: ${d.data_binding}</div>\n`
       tags += '<br />\n'
-      tags += `<div class="badge badge-pill badge-secondary" float="left">URL: 
+      tags += `<div class="badge badge-pill badge-secondary" style="width: 100%; overflow: hidden; text-overflow: ellipsis;" float="left">URL: 
       <a href=${d.link} class="link">${d.link}</a></div>\n`
       tags += '<br />\n'
       // tags += `<span class="badge badge-pill badge-secondary">specificity: ${d.specificity.toLowerCase()}</span>\n`
